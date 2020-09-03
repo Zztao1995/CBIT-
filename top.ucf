@@ -1,0 +1,42 @@
+NET "clock_in" LOC = P123;
+
+NET "rstn_6409" LOC = P101;
+NET "rx" LOC = P6;
+NET "tx" LOC = P5;
+
+NET "m2_udi" LOC = P98;
+NET "m2_bzo" LOC = P99;
+NET "m2_boo" LOC = P100;
+
+NET "m5_udi" LOC = P94;
+NET "NVM_M5" LOC = P93;
+NET "DCLK_M5" LOC = P92;
+NET "CLOCK_M5" LOC = P88;
+
+NET "m7_udi" LOC = P84;
+NET "NVM_M7" LOC = P83;
+NET "DCLK_M7" LOC = P82;
+NET "CLOCK_M7" LOC = P81;
+
+NET "io_4" LOC = P30; //IO¿Ú
+NET "io_3" LOC = P32;  
+NET "io_2" LOC = P33; 
+NET "io_1" LOC = P34; 
+NET "io_0" LOC = P35; 
+NET "led1" LOC = P26; 
+NET "led2" LOC = P27; 
+
+NET "m5_udi2" LOC = P87;
+NET "m7_udi2" LOC = P80;
+NET "rx_485" LOC = P140;//rs485
+NET "ctl_485" LOC = P139;
+NET "tx_485" LOC = P138;
+
+NET "rx1" LOC = P14; //FT4232Á¬½Ó
+NET "tx1" LOC = P12;  
+
+#PIN "my_pll/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "my_clock/clk_12m_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "my_clock/clk_3m_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "my_clock/clk_1m_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "my_clock/clk_41p766k_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/Python-FPGA-Git-JAVA/FPGA/cbit1/select.v -lang verilog -prj cbit1 -o select.spl -module select -template D:/ISE14.7/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 select.spl E:/Python-FPGA-Git-JAVA/FPGA/cbit1/select.sym 

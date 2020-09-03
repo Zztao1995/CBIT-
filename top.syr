@@ -1,0 +1,1345 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\PLL.v" into library work
+Parsing module <PLL>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\upload_tx.v" into library work
+Parsing module <upload_tx>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" into library work
+Parsing module <pic_tx>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" into library work
+Parsing module <select>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\pic_encode.v" into library work
+Parsing module <pic_encode>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\pic_decode.v" into library work
+Parsing module <pic_decode>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\pic_fifo.v" into library work
+Parsing module <pic_fifo>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\fifo_8to16.v" into library work
+Parsing module <fifo_8to16>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\fifo_16to8.v" into library work
+Parsing module <fifo_16to8>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\decode_m2.v" into library work
+Parsing module <decode_m2>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\decode_6409.v" into library work
+Parsing module <decode_6409>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\contrl_tx.v" into library work
+Parsing module <contrl_tx>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\cmd_encode.v" into library work
+Parsing module <cmd_encode>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" into library work
+Parsing module <UPLOAD>.
+WARNING:HDLCompiler:751 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" Line 52: Redeclaration of ansi port m5_data is not allowed
+WARNING:HDLCompiler:751 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" Line 55: Redeclaration of ansi port m2_empty is not allowed
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v" into library work
+Parsing module <Uart_rx>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Switch_speed.v" into library work
+Parsing module <Switch>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\rst.v" into library work
+Parsing module <rst>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" into library work
+Parsing module <PIC>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\CMD.v" into library work
+Parsing module <CMD>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" Line 75: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" Line 76: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <clock>.
+
+Elaborating module <PLL>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=9,CLKFX_MULTIPLY=8,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=37.037,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\PLL.v" Line 126: Assignment to locked_int ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\PLL.v" Line 127: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" Line 105: Assignment to clk_1m ignored, since the identifier is never used
+
+Elaborating module <rst>.
+
+Elaborating module <Uart_rx>.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v" Line 40: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v" Line 42: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v" Line 43: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <CMD>.
+
+Elaborating module <fifo_8to16>.
+WARNING:HDLCompiler:1499 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\fifo_8to16.v" Line 39: Empty module <fifo_8to16> remains a black box.
+
+Elaborating module <cmd_encode>.
+
+Elaborating module <Switch>.
+WARNING:HDLCompiler:1016 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" Line 93: Port flag is not connected to this instance
+
+Elaborating module <PIC>.
+
+Elaborating module <pic_fifo>.
+WARNING:HDLCompiler:1499 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\pic_fifo.v" Line 39: Empty module <pic_fifo> remains a black box.
+
+Elaborating module <pic_encode>.
+WARNING:HDLCompiler:1127 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\pic_encode.v" Line 61: Assignment to empty_riseedge ignored, since the identifier is never used
+
+Elaborating module <pic_decode>.
+
+Elaborating module <contrl_tx>.
+
+Elaborating module <pic_tx>.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 68: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 85: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 86: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 87: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 88: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 89: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 90: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 91: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 92: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 93: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_tx.v" Line 94: case condition never applies
+WARNING:HDLCompiler:1127 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" Line 99: Assignment to tx ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" Line 79: Net <m2_rd_en> does not have a driver.
+WARNING:HDLCompiler:552 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" Line 93: Input port flag is not connected on this instance
+
+Elaborating module <UPLOAD>.
+
+Elaborating module <select>.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 150: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 152: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 154: Result of 11-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 156: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 158: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 160: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 199: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 204: case condition never applies
+WARNING:HDLCompiler:295 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v" Line 209: case condition never applies
+
+Elaborating module <upload_tx>.
+
+Elaborating module <decode_m2>.
+
+Elaborating module <fifo_16to8>.
+WARNING:HDLCompiler:1499 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\fifo_16to8.v" Line 39: Empty module <fifo_16to8> remains a black box.
+
+Elaborating module <decode_6409>.
+WARNING:Xst:2972 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" line 85. All outputs of instance <contrl_en> of block <contrl_tx> are unconnected in block <PIC>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" line 93. All outputs of instance <pictx> of block <pic_tx> are unconnected in block <PIC>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v".
+WARNING:Xst:647 - Input <m7_udi2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_485> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" line 99: Output port <clk_1m> of the instance <my_clock> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.v" line 157: Output port <m5_data> of the instance <my_upload> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\clock.v".
+    Found 2-bit register for signal <cnt3>.
+    Found 3-bit register for signal <cnt5>.
+    Found 4-bit register for signal <cnt11>.
+    Found 1-bit register for signal <clk_3m>.
+    Found 1-bit register for signal <clk_1m>.
+    Found 1-bit register for signal <clk_41p766k>.
+    Found 1-bit register for signal <clk_12m>.
+    Found 2-bit adder for signal <cnt3[1]_GND_2_o_add_1_OUT> created at line 58.
+    Found 3-bit adder for signal <cnt5[2]_GND_2_o_add_5_OUT> created at line 70.
+    Found 4-bit adder for signal <cnt11[3]_GND_2_o_add_9_OUT> created at line 82.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <PLL>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\ipcore_dir\PLL.v".
+    Summary:
+	no macro.
+Unit <PLL> synthesized.
+
+Synthesizing Unit <rst>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\rst.v".
+    Found 1-bit register for signal <rstn>.
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit adder for signal <cnt[15]_GND_7_o_add_2_OUT> created at line 32.
+    Found 16-bit comparator greater for signal <cnt[15]_GND_7_o_LessThan_7_o> created at line 36
+    Found 16-bit comparator greater for signal <PWR_7_o_cnt[15]_LessThan_8_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <rst> synthesized.
+
+Synthesizing Unit <Uart_rx>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Uart_rx.v".
+    Found 16-bit register for signal <pic_cnt>.
+    Found 16-bit register for signal <cmd_cnt>.
+    Found 8-bit register for signal <cmd_data>.
+    Found 8-bit register for signal <pic_data>.
+    Found 1-bit register for signal <rxr1>.
+    Found 1-bit register for signal <cmd_en>.
+    Found 1-bit register for signal <pic_en>.
+    Found 1-bit register for signal <cmd_ready>.
+    Found 1-bit register for signal <pic_ready>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <rxr0>.
+    Found 16-bit adder for signal <pic_cnt[15]_GND_8_o_add_6_OUT> created at line 93.
+    Found 16-bit adder for signal <cmd_cnt[15]_GND_8_o_add_9_OUT> created at line 103.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <Uart_rx> synthesized.
+
+Synthesizing Unit <CMD>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\CMD.v".
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\CMD.v" line 36: Output port <full> of the instance <cmd_fifo> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <CMD> synthesized.
+
+Synthesizing Unit <cmd_encode>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\cmd_encode.v".
+        cmd_head = 6'b111000
+        data_head = 6'b000111
+        IDLE = 11'b00000000001
+        START = 11'b00000000010
+        START1 = 11'b00000000100
+        LOAD_CMD = 11'b00000001000
+        SET_CMD_PARITY = 11'b00000010000
+        ENCODE_M2_CMD = 11'b00000100000
+        SEND_CMD = 11'b00001000000
+        LOAD_DATA = 11'b00010000000
+        SET_DATA_PARITY = 11'b00100000000
+        ENCODE_M2_DATA = 11'b01000000000
+        SEND_DATA = 11'b10000000000
+    Found 1-bit register for signal <empty_r2>.
+    Found 1-bit register for signal <empty_r1>.
+    Found 11-bit register for signal <current_state>.
+    Found 16-bit register for signal <data_reg>.
+    Found 6-bit register for signal <bit_count>.
+    Found 40-bit register for signal <code_reg>.
+    Found 1-bit register for signal <parity>.
+    Found 1-bit register for signal <rd_en>.
+    Found 16-bit register for signal <cmd>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 16                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 22                                             |
+    | Clock              | clock_41p766k (rising_edge)                    |
+    | Reset              | rstn (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000001                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <bit_count[5]_GND_11_o_add_46_OUT> created at line 185.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cmd_encode> synthesized.
+
+Synthesizing Unit <Switch>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\Switch_speed.v".
+    Found 1-bit register for signal <speed>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Switch> synthesized.
+
+Synthesizing Unit <PIC>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v".
+WARNING:Xst:2898 - Port 'flag', unconnected in block instance 'pictx', is tied to GND.
+WARNING:Xst:647 - Input <flag> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" line 40: Output port <full> of the instance <pic_cmd_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" line 72: Output port <full> of the instance <pic_m2_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\PIC.v" line 93: Output port <tx> of the instance <pictx> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <pic_tx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <m2_rd_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <PIC> synthesized.
+
+Synthesizing Unit <pic_encode>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\pic_encode.v".
+        cmd_head = 6'b111000
+        data_head = 6'b000111
+        IDLE = 11'b00000000001
+        START = 11'b00000000010
+        START1 = 11'b00000000100
+        LOAD_CMD = 11'b00000001000
+        SET_CMD_PARITY = 11'b00000010000
+        ENCODE_M2_CMD = 11'b00000100000
+        SEND_CMD = 11'b00001000000
+        LOAD_DATA = 11'b00010000000
+        SET_DATA_PARITY = 11'b00100000000
+        ENCODE_M2_DATA = 11'b01000000000
+        SEND_DATA = 11'b10000000000
+    Found 1-bit register for signal <empty_r2>.
+    Found 1-bit register for signal <empty_r1>.
+    Found 1-bit register for signal <parity>.
+    Found 1-bit register for signal <rd_en>.
+    Found 11-bit register for signal <current_state>.
+    Found 8-bit register for signal <data_reg>.
+    Found 8-bit register for signal <bit_count>.
+    Found 24-bit register for signal <code_reg>.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 22                                             |
+    | Clock              | clock_41p766k (rising_edge)                    |
+    | Reset              | Rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000001                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <bit_count[7]_GND_16_o_add_38_OUT> created at line 171.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <pic_encode> synthesized.
+
+Synthesizing Unit <pic_decode>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\pic_decode.v".
+        IDLE = 4'b0001
+        START = 4'b0010
+        RECV_HEAD = 4'b0100
+        RECV_DATA = 4'b1000
+    Found 1-bit register for signal <m2_udi_r2>.
+    Found 1-bit register for signal <recv_data_m2_finish>.
+    Found 1-bit register for signal <m2_udi_r1>.
+    Found 10-bit register for signal <sample_counter>.
+    Found 6-bit register for signal <data_counter>.
+    Found 3-bit register for signal <headreg>.
+    Found 8-bit register for signal <recv_data_m2>.
+    Found 34-bit register for signal <recv_datareg>.
+    Found 4-bit register for signal <current_state>.
+    Found finite state machine <FSM_2> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clock_system (rising_edge)                     |
+    | Reset              | Rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <sample_counter[9]_GND_18_o_add_32_OUT> created at line 165.
+    Found 6-bit adder for signal <data_counter[5]_GND_18_o_add_37_OUT> created at line 169.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <pic_decode> synthesized.
+
+Synthesizing Unit <UPLOAD>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v".
+WARNING:Xst:647 - Input <NVM_M7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 120: Output port <full> of the instance <m2_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 134: Output port <counter> of the instance <m5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 134: Output port <count_en> of the instance <m5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 147: Output port <full> of the instance <m5_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 162: Output port <counter> of the instance <m7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 162: Output port <count_en> of the instance <m7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\UPLOAD.v" line 175: Output port <full> of the instance <m7_fifo> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <UPLOAD> synthesized.
+
+Synthesizing Unit <select>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\select.v".
+        IDLE = 11'b00000000001
+        M2_RD0 = 11'b00000000010
+        M2_RD1 = 11'b00000000100
+        M5_RD0 = 11'b00000001000
+        M5_RD1 = 11'b00000010000
+        M7_RD0 = 11'b00000100000
+        M7_RD1 = 11'b00001000000
+        SEND = 11'b00010000000
+        M2_RD2 = 11'b00100000000
+        M5_RD2 = 11'b01000000000
+        M7_RD2 = 11'b10000000000
+WARNING:Xst:647 - Input <cmd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <m2_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <m7_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <m2_emptyr1>.
+    Found 1-bit register for signal <m5_emptyr0>.
+    Found 1-bit register for signal <m5_emptyr1>.
+    Found 1-bit register for signal <m7_emptyr0>.
+    Found 1-bit register for signal <m7_emptyr1>.
+    Found 1-bit register for signal <m2_emptyr0>.
+    Found 8-bit register for signal <current_state>.
+    Found 1-bit register for signal <idler1>.
+    Found 1-bit register for signal <m2_rden>.
+    Found 1-bit register for signal <m5_rden>.
+    Found 1-bit register for signal <m7_rden>.
+    Found 1-bit register for signal <idler0>.
+INFO:Xst:1799 - State 10000000 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_3> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 14                                             |
+    | Clock              | clk_24m (rising_edge)                          |
+    | Reset              | rstn (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000001                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_data<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   8 Latch(s).
+	inferred   1 Finite State Machine(s).
+Unit <select> synthesized.
+
+Synthesizing Unit <upload_tx>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\upload_tx.v".
+    Found 1-bit register for signal <tx>.
+    Found 16-bit register for signal <cnt>.
+    Found 1-bit register for signal <wrr1>.
+    Found 1-bit register for signal <send_fg>.
+    Found 1-bit register for signal <idle>.
+    Found 1-bit register for signal <wrr0>.
+    Found 16-bit adder for signal <cnt[15]_GND_35_o_add_1_OUT> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <upload_tx> synthesized.
+
+Synthesizing Unit <decode_m2>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\decode_m2.v".
+        IDLE = 4'b0001
+        START = 4'b0010
+        RECV_HEAD = 4'b0100
+        RECV_DATA = 4'b1000
+    Found 9-bit register for signal <sample_counter>.
+    Found 6-bit register for signal <data_counter>.
+    Found 3-bit register for signal <headreg>.
+    Found 16-bit register for signal <recv_data_m2>.
+    Found 34-bit register for signal <recv_datareg>.
+    Found 4-bit register for signal <current_state>.
+    Found 1-bit register for signal <m2_udi_r2>.
+    Found 1-bit register for signal <rden>.
+    Found 1-bit register for signal <m2_udi_r1>.
+    Found finite state machine <FSM_4> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clock_system (rising_edge)                     |
+    | Reset              | rstn (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <sample_counter[8]_GND_37_o_add_32_OUT> created at line 160.
+    Found 6-bit adder for signal <data_counter[5]_GND_37_o_add_37_OUT> created at line 164.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  71 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <decode_m2> synthesized.
+
+Synthesizing Unit <decode_6409>.
+    Related source file is "E:\Python-FPGA-Git-JAVA\FPGA\cbit1\decode_6409.v".
+    Found 5-bit register for signal <cnt>.
+    Found 16-bit register for signal <data_reg>.
+    Found 16-bit register for signal <data_out>.
+    Found 18-bit register for signal <counter>.
+    Found 1-bit register for signal <dclk1>.
+    Found 1-bit register for signal <sdo_0>.
+    Found 1-bit register for signal <sdo_1>.
+    Found 1-bit register for signal <cnt_en>.
+    Found 1-bit register for signal <data_ready>.
+    Found 1-bit register for signal <count_en>.
+    Found 1-bit register for signal <dclk0>.
+    Found 5-bit adder for signal <cnt[4]_GND_40_o_add_0_OUT> created at line 88.
+    Found 18-bit adder for signal <counter[17]_GND_40_o_add_8_OUT> created at line 127.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  62 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <decode_6409> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 17
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 4
+ 18-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 3
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 91
+ 1-bit register                                        : 57
+ 10-bit register                                       : 1
+ 16-bit register                                       : 11
+ 18-bit register                                       : 2
+ 2-bit register                                        : 1
+ 24-bit register                                       : 1
+ 3-bit register                                        : 3
+ 34-bit register                                       : 2
+ 4-bit register                                        : 1
+ 40-bit register                                       : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 3
+ 8-bit register                                        : 5
+ 9-bit register                                        : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 36
+ 1-bit 2-to-1 multiplexer                              : 16
+ 10-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor16                                           : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/fifo_16to8.ngc>.
+Reading core <ipcore_dir/fifo_8to16.ngc>.
+Reading core <ipcore_dir/pic_fifo.ngc>.
+Loading core <fifo_16to8> for timing and area information for instance <m2_fifo>.
+Loading core <fifo_16to8> for timing and area information for instance <m5_fifo>.
+Loading core <fifo_16to8> for timing and area information for instance <m7_fifo>.
+Loading core <fifo_8to16> for timing and area information for instance <cmd_fifo>.
+Loading core <pic_fifo> for timing and area information for instance <pic_cmd_fifo>.
+Loading core <pic_fifo> for timing and area information for instance <pic_m2_fifo>.
+WARNING:Xst:2677 - Node <recv_datareg_17> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_18> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_19> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_20> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_21> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_22> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_23> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_24> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_25> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_26> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_27> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_28> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_29> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_30> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_31> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_32> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_33> of sequential type is unconnected in block <pic_decode>.
+
+Synthesizing (advanced) Unit <Uart_rx>.
+The following registers are absorbed into counter <pic_cnt>: 1 register on signal <pic_cnt>.
+The following registers are absorbed into counter <cmd_cnt>: 1 register on signal <cmd_cnt>.
+Unit <Uart_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <cnt3>: 1 register on signal <cnt3>.
+The following registers are absorbed into counter <cnt5>: 1 register on signal <cnt5>.
+The following registers are absorbed into counter <cnt11>: 1 register on signal <cnt11>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <decode_6409>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <decode_6409> synthesized (advanced).
+
+Synthesizing (advanced) Unit <decode_m2>.
+The following registers are absorbed into counter <sample_counter>: 1 register on signal <sample_counter>.
+The following registers are absorbed into counter <data_counter>: 1 register on signal <data_counter>.
+Unit <decode_m2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pic_decode>.
+The following registers are absorbed into counter <sample_counter>: 1 register on signal <sample_counter>.
+The following registers are absorbed into counter <data_counter>: 1 register on signal <data_counter>.
+Unit <pic_decode> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rst>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <rst> synthesized (advanced).
+
+Synthesizing (advanced) Unit <upload_tx>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <upload_tx> synthesized (advanced).
+WARNING:Xst:2677 - Node <recv_datareg_17> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_18> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_19> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_20> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_21> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_22> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_23> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_24> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_25> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_26> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_27> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_28> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_29> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_30> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_31> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_32> of sequential type is unconnected in block <pic_decode>.
+WARNING:Xst:2677 - Node <recv_datareg_33> of sequential type is unconnected in block <pic_decode>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 15
+ 10-bit up counter                                     : 1
+ 16-bit up counter                                     : 4
+ 18-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 2
+ 6-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 336
+ Flip-Flops                                            : 336
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 16
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 6
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor16                                           : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_upload/select/FSM_3> on signal <current_state[1:8]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 00000001 | 00000001
+ 00000010 | 00000010
+ 00001000 | 00001000
+ 00100000 | 00100000
+ 00000100 | 00000100
+ 00010000 | 00010000
+ 01000000 | 01000000
+ 10000000 | unreached
+ 00000000 | 00000000
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_upload/m2/FSM_4> on signal <current_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 11
+ 1000  | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_cmd/cmd_encode/FSM_0> on signal <current_state[1:11]> with user encoding.
+----------------------------
+ State       | Encoding
+----------------------------
+ 00000000001 | 00000000001
+ 00000000010 | 00000000010
+ 00000000100 | 00000000100
+ 00000001000 | 00000001000
+ 00000010000 | 00000010000
+ 00000100000 | 00000100000
+ 00001000000 | 00001000000
+ 00010000000 | 00010000000
+ 00100000000 | 00100000000
+ 01000000000 | 01000000000
+ 10000000000 | 10000000000
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_pic/pic_encode/FSM_1> on signal <current_state[1:11]> with user encoding.
+----------------------------
+ State       | Encoding
+----------------------------
+ 00000000001 | 00000000001
+ 00000000010 | 00000000010
+ 00000000100 | 00000000100
+ 00000001000 | 00000001000
+ 00000010000 | 00000010000
+ 00000100000 | 00000100000
+ 00001000000 | 00001000000
+ 00010000000 | 00010000000
+ 00100000000 | 00100000000
+ 01000000000 | 01000000000
+ 10000000000 | 10000000000
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_pic/pic_decode/FSM_2> on signal <current_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 11
+ 1000  | 10
+-------------------
+
+Optimizing unit <top> ...
+
+Optimizing unit <clock> ...
+
+Optimizing unit <Uart_rx> ...
+
+Optimizing unit <UPLOAD> ...
+
+Optimizing unit <select> ...
+
+Optimizing unit <upload_tx> ...
+
+Optimizing unit <decode_m2> ...
+
+Optimizing unit <decode_6409> ...
+
+Optimizing unit <cmd_encode> ...
+
+Optimizing unit <pic_encode> ...
+
+Optimizing unit <pic_decode> ...
+WARNING:Xst:2677 - Node <my_upload/m7/counter_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/counter_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m7/count_en> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/counter_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <my_upload/m5/count_en> of sequential type is unconnected in block <top>.
+WARNING:Xst:1710 - FF/Latch <my_pic/pic_decode/data_counter_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <my_upload/select/current_state_FSM_FFd3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <my_upload/select/m7_rden> 
+INFO:Xst:2261 - The FF/Latch <my_upload/select/current_state_FSM_FFd5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <my_upload/select/m5_rden> 
+INFO:Xst:2261 - The FF/Latch <my_upload/select/current_state_FSM_FFd7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <my_upload/select/m2_rden> 
+INFO:Xst:2261 - The FF/Latch <my_clock/cnt3_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <my_clock/clk_12m> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 23.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m7_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m5_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m2_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_cmd/cmd_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_pic/pic_m2_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m7_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m7_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m5_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m5_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_upload/m2_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_upload/m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_cmd/cmd_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_cmd/cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_pic/pic_m2_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_pic/pic_m2_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <my_pic/pic_cmd_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+FlipFlop my_rst/rstn has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 475
+ Flip-Flops                                            : 475
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1300
+#      GND                         : 13
+#      INV                         : 56
+#      LUT1                        : 32
+#      LUT2                        : 296
+#      LUT3                        : 95
+#      LUT4                        : 160
+#      LUT5                        : 105
+#      LUT6                        : 264
+#      MUXCY                       : 187
+#      MUXF7                       : 2
+#      VCC                         : 7
+#      XORCY                       : 83
+# FlipFlops/Latches                : 1283
+#      FD                          : 38
+#      FD_1                        : 3
+#      FDC                         : 642
+#      FDCE                        : 462
+#      FDE                         : 16
+#      FDP                         : 99
+#      FDPE                        : 13
+#      FDR                         : 2
+#      LD_1                        : 8
+# RAMS                             : 6
+#      RAMB8BWER                   : 6
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 26
+#      IBUF                        : 8
+#      IBUFG                       : 1
+#      OBUF                        : 17
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1283  out of  11440    11%  
+ Number of Slice LUTs:                 1008  out of   5720    17%  
+    Number used as Logic:              1008  out of   5720    17%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1693
+   Number with an unused Flip Flop:     410  out of   1693    24%  
+   Number with an unused LUT:           685  out of   1693    40%  
+   Number of fully used LUT-FF pairs:   598  out of   1693    35%  
+   Number of unique control sets:       137
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  26  out of    102    25%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of     32     9%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+clock_in                           | DCM_SP:CLKFX                    | 1006  |
+my_clock/clk_1m                    | NONE(my_clock/cnt11_3)          | 5     |
+my_clock/cnt3_0                    | NONE(my_clock/cnt5_2)           | 4     |
+my_rst/rstn                        | NONE(my_upload/select/tx_data_0)| 8     |
+my_clock/clk_41p766k               | BUFG                            | 268   |
+-----------------------------------+---------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.505ns (Maximum Frequency: 153.731MHz)
+   Minimum input arrival time before clock: 4.605ns
+   Maximum output required time after clock: 5.452ns
+   Maximum combinational path delay: 5.080ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_in'
+  Clock period: 6.505ns (frequency: 153.731MHz)
+  Total number of paths / destination ports: 10209 / 2521
+-------------------------------------------------------------------------
+Delay:               3.659ns (Levels of Logic = 3)
+  Source:            my_rst/cnt_12 (FF)
+  Destination:       my_rst/rstn (FF)
+  Source Clock:      clock_in rising 0.9X
+  Destination Clock: clock_in falling 0.9X
+
+  Data Path: my_rst/cnt_12 to my_rst/rstn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.221  my_rst/cnt_12 (my_rst/cnt_12)
+     LUT6:I0->O            2   0.254   1.156  my_rst/cnt[15]_PWR_7_o_equal_2_o<15>21 (my_rst/cnt[15]_PWR_7_o_equal_2_o<15>21)
+     LUT5:I0->O            1   0.254   0.000  my_rst/rstn_rstpot_G (N104)
+     MUXF7:I1->O           3   0.175   0.000  my_rst/rstn_rstpot (my_rst/rstn_rstpot)
+     FD_1:D                    0.074          my_rst/rstn
+    ----------------------------------------
+    Total                      3.659ns (1.282ns logic, 2.377ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_clock/clk_1m'
+  Clock period: 2.375ns (frequency: 421.053MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.375ns (Levels of Logic = 1)
+  Source:            my_clock/cnt11_0 (FF)
+  Destination:       my_clock/cnt11_0 (FF)
+  Source Clock:      my_clock/clk_1m rising
+  Destination Clock: my_clock/clk_1m rising
+
+  Data Path: my_clock/cnt11_0 to my_clock/cnt11_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.525   0.840  my_clock/cnt11_0 (my_clock/cnt11_0)
+     INV:I->O              1   0.255   0.681  my_clock/Mcount_cnt11_xor<0>11_INV_0 (my_clock/Mcount_cnt11)
+     FDC:D                     0.074          my_clock/cnt11_0
+    ----------------------------------------
+    Total                      2.375ns (0.854ns logic, 1.521ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_clock/cnt3_0'
+  Clock period: 2.338ns (frequency: 427.716MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               2.338ns (Levels of Logic = 1)
+  Source:            my_clock/cnt5_0 (FF)
+  Destination:       my_clock/cnt5_0 (FF)
+  Source Clock:      my_clock/cnt3_0 rising
+  Destination Clock: my_clock/cnt3_0 rising
+
+  Data Path: my_clock/cnt5_0 to my_clock/cnt5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.525   0.803  my_clock/cnt5_0 (my_clock/cnt5_0)
+     INV:I->O              1   0.255   0.681  my_clock/Mcount_cnt5_xor<0>11_INV_0 (my_clock/Mcount_cnt5)
+     FDC:D                     0.074          my_clock/cnt5_0
+    ----------------------------------------
+    Total                      2.338ns (0.854ns logic, 1.484ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_clock/clk_41p766k'
+  Clock period: 6.037ns (frequency: 165.645MHz)
+  Total number of paths / destination ports: 3340 / 447
+-------------------------------------------------------------------------
+Delay:               6.037ns (Levels of Logic = 5)
+  Source:            my_pic/pic_encode/bit_count_7 (FF)
+  Destination:       my_pic/pic_encode/rd_en (FF)
+  Source Clock:      my_clock/clk_41p766k rising
+  Destination Clock: my_clock/clk_41p766k rising
+
+  Data Path: my_pic/pic_encode/bit_count_7 to my_pic/pic_encode/rd_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   1.196  my_pic/pic_encode/bit_count_7 (my_pic/pic_encode/bit_count_7)
+     LUT5:I0->O            4   0.254   0.804  my_pic/pic_encode/Mmux_rd_en_PWR_15_o_MUX_112_o121 (my_pic/pic_encode/Mmux_rd_en_PWR_15_o_MUX_112_o12)
+     LUT5:I4->O            4   0.254   0.804  my_pic/pic_encode/current_state_next_state[10]_rd_en_Select_64_o11 (my_pic/pic_encode/current_state_next_state[10]_rd_en_Select_64_o1)
+     LUT6:I5->O            1   0.254   0.682  my_pic/pic_encode/current_state_next_state[10]_rd_en_Select_64_o4_SW0_SW0 (N97)
+     LUT6:I5->O            1   0.254   0.682  my_pic/pic_encode/current_state_next_state[10]_rd_en_Select_64_o4_SW0 (N82)
+     LUT6:I5->O            1   0.254   0.000  my_pic/pic_encode/current_state_next_state[10]_rd_en_Select_64_o5 (my_pic/pic_encode/next_state[10]_rd_en_Select_64_o)
+     FDC:D                     0.074          my_pic/pic_encode/rd_en
+    ----------------------------------------
+    Total                      6.037ns (1.869ns logic, 4.168ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_in'
+  Total number of paths / destination ports: 52 / 52
+-------------------------------------------------------------------------
+Offset:              4.605ns (Levels of Logic = 3)
+  Source:            NVM_M5 (PAD)
+  Destination:       my_upload/m7/cnt_4 (FF)
+  Destination Clock: clock_in rising 0.9X
+
+  Data Path: NVM_M5 to my_upload/m7/cnt_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.949  NVM_M5_IBUF (io_4_OBUF)
+     LUT2:I0->O            1   0.250   0.682  my_upload/m7/_n0048_inv2_SW0 (N33)
+     LUT6:I5->O            5   0.254   0.840  my_upload/m7/_n0048_inv2 (my_upload/m7/_n0048_inv)
+     FDCE:CE                   0.302          my_upload/m7/cnt_0
+    ----------------------------------------
+    Total                      4.605ns (2.134ns logic, 2.471ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_in'
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Offset:              5.452ns (Levels of Logic = 2)
+  Source:            my_clock/cnt3_0 (FF)
+  Destination:       CLOCK_M5 (PAD)
+  Source Clock:      clock_in rising 0.9X
+
+  Data Path: my_clock/cnt3_0 to CLOCK_M5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.084  my_clock/cnt3_0 (my_clock/cnt3_0)
+     LUT3:I1->O            1   0.250   0.681  Mmux_CLOCK_M511 (CLOCK_M5_OBUF)
+     OBUF:I->O                 2.912          CLOCK_M5_OBUF (CLOCK_M5)
+    ----------------------------------------
+    Total                      5.452ns (3.687ns logic, 1.765ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'my_clock/clk_41p766k'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              5.286ns (Levels of Logic = 2)
+  Source:            my_cmd/cmd_encode/code_reg_39 (FF)
+  Destination:       m2_bzo (PAD)
+  Source Clock:      my_clock/clk_41p766k rising
+
+  Data Path: my_cmd/cmd_encode/code_reg_39 to m2_bzo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   0.874  my_cmd/cmd_encode/code_reg_39 (my_cmd/cmd_encode/code_reg_39)
+     LUT2:I0->O            2   0.250   0.725  io_11 (io_1_OBUF)
+     OBUF:I->O                 2.912          m2_bzo_OBUF (m2_bzo)
+    ----------------------------------------
+    Total                      5.286ns (3.687ns logic, 1.599ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               5.080ns (Levels of Logic = 2)
+  Source:            NVM_M5 (PAD)
+  Destination:       io_4 (PAD)
+
+  Data Path: NVM_M5 to io_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.840  NVM_M5_IBUF (io_4_OBUF)
+     OBUF:I->O                 2.912          io_4_OBUF (io_4)
+    ----------------------------------------
+    Total                      5.080ns (4.240ns logic, 0.840ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_in
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clock_in            |    6.529|    3.537|    3.659|         |
+my_clock/clk_41p766k|    5.006|         |         |         |
+my_rst/rstn         |    5.894|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_clock/clk_1m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |         |    4.858|         |         |
+my_clock/clk_1m|    2.375|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_clock/clk_41p766k
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clock_in            |    1.280|    4.858|         |         |
+my_clock/clk_41p766k|    6.037|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_clock/cnt3_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |         |    4.858|         |         |
+my_clock/cnt3_0|    2.338|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_rst/rstn
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |    2.817|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.78 secs
+ 
+--> 
+
+Total memory usage is 246284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  132 (   0 filtered)
+Number of infos    :   67 (   0 filtered)
+

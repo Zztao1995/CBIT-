@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj cbit1 -o E:/Python-FPGA-Git-JAVA/FPGA/cbit1/Switch.tfi -lib work E:/Python-FPGA-Git-JAVA/FPGA/cbit1//Switch_speed.v -module Switch -template D:/ISE14.7/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

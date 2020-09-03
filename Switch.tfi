@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Switch instance_name (
+    .rstn(rstn), 
+    .clk_24m(clk_24m), 
+    .cmd(cmd), 
+    .speed(speed)
+    );
+
+

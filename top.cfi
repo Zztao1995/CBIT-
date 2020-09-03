@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            08/20/2020 - 14:57
+SOURCE          E:\Python-FPGA-Git-JAVA\FPGA\cbit1\top.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1ACEBB5B
+START_ADDRESS   0x00000000 END_ADDRESS 0x000536CF DIRECTION_UP   "E:/Python-FPGA-Git-JAVA/FPGA/cbit1/top.bit" 6slx9tqg144

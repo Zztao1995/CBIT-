@@ -1,0 +1,21 @@
+
+
+
+// Instantiate the module
+UPLOAD instance_name (
+    .rstn(rstn), 
+    .clk_24m(clk_24m), 
+    .m2_udi(m2_udi), 
+    .m5_udi(m5_udi), 
+    .NVM_M5(NVM_M5), 
+    .DCLK_M5(DCLK_M5), 
+    .CLOCK_M5(CLOCK_M5), 
+    .m7_udi(m7_udi), 
+    .NVM_M7(NVM_M7), 
+    .DCLK_M7(DCLK_M7), 
+    .CLOCK_M7(CLOCK_M7), 
+    .cmd(cmd), 
+    .m2_m5_m7_tx(m2_m5_m7_tx)
+    );
+
+

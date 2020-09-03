@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+Uart_rx instance_name (
+    .clock_system(clock_system), 
+    .rstn(rstn), 
+    .rx(rx), 
+    .pic_readyr(pic_readyr), 
+    .cmd_readyr(cmd_readyr), 
+    .pic_datar(pic_datar), 
+    .cmd_datar(cmd_datar), 
+    .flag(flag)
+    );
+
+

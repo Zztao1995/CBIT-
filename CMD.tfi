@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+CMD instance_name (
+    .rstn(rstn), 
+    .clk_24m(clk_24m), 
+    .clk_41p766k(clk_41p766k), 
+    .data(data), 
+    .data_ready(data_ready), 
+    .cmd(cmd), 
+    .bzo(bzo), 
+    .boo(boo)
+    );
+
+

@@ -1,0 +1,6 @@
+verilog work "upload_tx.v"
+verilog work "select.v"
+verilog work "ipcore_dir/fifo_16to8.v"
+verilog work "decode_m2.v"
+verilog work "decode_6409.v"
+verilog work "UPLOAD.v"

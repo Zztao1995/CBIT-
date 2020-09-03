@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\Python-FPGA-Git-JAVA\FPGA\cbit1\impact.xsl
+OUTFILE=E:\Python-FPGA-Git-JAVA\FPGA\cbit1\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\Python-FPGA-Git-JAVA\FPGA\cbit1
+LICENSE=iMPACT
+USER_INFO=iMPACT

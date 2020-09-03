@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+PIC instance_name (
+    .rstn(rstn), 
+    .clk_24m(clk_24m), 
+    .clk_41p766k(clk_41p766k), 
+    .pic_data(pic_data), 
+    .pic_ready(pic_ready), 
+    .flag(flag), 
+    .m2_udi(m2_udi), 
+    .pic_tx(pic_tx), 
+    .pic_bzo(pic_bzo), 
+    .pic_boo(pic_boo)
+    );
+
+
